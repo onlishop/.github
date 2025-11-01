@@ -1,0 +1,11 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:onlishop/onlishop(-private)?:.*
+claim_pattern:
+  workflow_ref: onlishop/onlishop(-private)?/.github/workflows/nightly.ya?ml@refs/heads/trunk
+
+permissions:
+  actions: write
+  contents: read
+
+repositories:
+  - onlishop
